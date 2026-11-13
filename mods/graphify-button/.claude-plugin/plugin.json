@@ -1,6 +1,6 @@
 {
   "name": "graphify-button",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "輸入框上方的 graphify 快捷按鈕：一鍵產生或更新專案關係圖",
   "author": { "name": "Jimmy0219" }
 }
