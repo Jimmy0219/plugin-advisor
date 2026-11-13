@@ -8,6 +8,7 @@
 |---|---|---|---|---|
 | modern-web-guidance 0.0.194 | 插件（user scope，來自 claude-plugins-official） | 2026-11-13 | Google Chrome 官方的現代網頁最佳實踐與相容性指引；含 `modern-web-guidance`、`chrome-extensions` 兩個 skill，無 hooks／MCP，常駐約 476 token | `claude plugin uninstall modern-web-guidance@claude-plugins-official` |
 | ui-ux-pro-max 2.15.0 | 全域 skill（`~/.claude/skills/ui-ux-pro-max`，npx skills 安裝） | 2026-11-13 | UI 風格、配色、字型、UX 準則的本機搜尋資料庫；腳本只用 Python 標準函式庫、無網路呼叫，3.6MB | 刪除 `~/.claude/skills/ui-ux-pro-max` |
+| graphify 0.9.108（PyPI：`graphifyy`） | CLI（uv tool）＋全域 skill（`~/.claude/skills/graphify`） | 2026-11-13 | 把專案轉成互動關係圖（graph.html）與重點報告；程式碼本機解析不耗 token。未啟用常駐 hook；`graphify install` 在全域 `~/.claude/CLAUDE.md` 末尾加了 4 行註冊文字；SKILL.md 約 50KB，觸發時佔 context 較多 | `graphify uninstall` ＋ `uv tool uninstall graphifyy` |
 
 - MCP 伺服器（`~/.claude.json`、`claude_desktop_config.json`）：**無**
 - claude.ai 帳號插件：**無**
@@ -19,8 +20,8 @@
 |---|---|---|---|
 | Modern Web Guidance | 2026-11-13 | ✅ | 已安裝 |
 | UI/UX Pro Max | 2026-11-13 | ✅ | 已安裝 |
-| graphify | 2026-11-13 | ⚠️ 需改用 `uv tool install graphifyy`；適合大型專案 | 待討論 |
-| Clawd on Desk | 2026-11-13 | ⚠️ 娛樂性質，會自動寫入全域 hooks | 待討論 |
+| graphify | 2026-11-13 | ⚠️ 只裝 CLI＋skill，不開常駐 hook；用於專案結構圖、找冗餘、callflow 架構圖 | 已安裝 |
+| Clawd on Desk | 2026-11-13 | ⚠️ 記憶體已吃緊（swap 2.2GB）、桌面版有完成狀態清不掉的 bug（#1365）；改用內建通知 | 不裝 |
 | Claude-Mem | 2026-11-13 | ❌ 與內建記憶重疊、背景負擔重 | 不裝 |
 | Stop Slop | 2026-11-13 | ❌ 規則針對英文 | 不裝 |
 | Task Observer | 2026-11-13 | ❌ 尚無自訂 skill 可優化 | 不裝 |
