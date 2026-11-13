@@ -1,14 +1,31 @@
 # 已安裝的插件／Skill／工具清單
 
-> 最後盤點：2026-11-13。安裝或移除任何東西後請更新這份清單。
+> 最後更新：2026-11-13。安裝或移除任何東西後請更新這份清單。
 
 ## 使用者自行安裝
 
-- 本機插件（`/plugin`）：**無**（官方市集 `claude-plugins-official` 已下載，但未安裝任何插件）
-- 自訂 Skill（`~/.claude/skills`）：**無**
+| 名稱 | 類型 | 安裝日 | 一句話說明 | 移除方式 |
+|---|---|---|---|---|
+| modern-web-guidance 0.0.194 | 插件（user scope，來自 claude-plugins-official） | 2026-11-13 | Google Chrome 官方的現代網頁最佳實踐與相容性指引；含 `modern-web-guidance`、`chrome-extensions` 兩個 skill，無 hooks／MCP，常駐約 476 token | `claude plugin uninstall modern-web-guidance@claude-plugins-official` |
+| ui-ux-pro-max 2.15.0 | 全域 skill（`~/.claude/skills/ui-ux-pro-max`，npx skills 安裝） | 2026-11-13 | UI 風格、配色、字型、UX 準則的本機搜尋資料庫；腳本只用 Python 標準函式庫、無網路呼叫，3.6MB | 刪除 `~/.claude/skills/ui-ux-pro-max` |
+
 - MCP 伺服器（`~/.claude.json`、`claude_desktop_config.json`）：**無**
 - claude.ai 帳號插件：**無**
-- 待評估：CLAUDE.md 有提到 context7，但尚未安裝
+- 註：ui-ux-pro-max 刻意只裝單一 skill，未用插件版（插件版會一併裝 design、slides、brand 等 7 個 skill）
+
+## 評估紀錄
+
+| 名稱 | 日期 | 結論 | 狀態 |
+|---|---|---|---|
+| Modern Web Guidance | 2026-11-13 | ✅ | 已安裝 |
+| UI/UX Pro Max | 2026-11-13 | ✅ | 已安裝 |
+| graphify | 2026-11-13 | ⚠️ 需改用 `uv tool install graphifyy`；適合大型專案 | 待討論 |
+| Clawd on Desk | 2026-11-13 | ⚠️ 娛樂性質，會自動寫入全域 hooks | 待討論 |
+| Claude-Mem | 2026-11-13 | ❌ 與內建記憶重疊、背景負擔重 | 不裝 |
+| Stop Slop | 2026-11-13 | ❌ 規則針對英文 | 不裝 |
+| Task Observer | 2026-11-13 | ❌ 尚無自訂 skill 可優化 | 不裝 |
+| Find Skills | 2026-11-13 | ❌ 會跳過審查直接安裝 | 不裝 |
+| context7 | — | CLAUDE.md 有提到但尚未安裝 | 待評估 |
 
 ## claude.ai 帳號 Skill（官方內建）
 
