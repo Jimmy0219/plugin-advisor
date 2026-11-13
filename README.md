@@ -21,6 +21,14 @@ MCP 伺服器或 CLI 工具，**適不適合裝進我的電腦**（M1 MacBook Ai
 用途與重複性、資源負擔、相容性（Apple Silicon）、安裝方式（uv / brew / docker / npx）、
 安全與權限、Context 成本、維護狀態、移除難度。
 
+## 附帶插件：graphify-button
+
+在桌面版 Code 分頁輸入框上方加「產生專案圖」「只更新變動」兩個按鈕，不用記 `/graphify` 指令。
+
+```
+/plugin install graphify-button --marketplace Jimmy0219/plugin-advisor
+```
+
 ## 授權
 
 MIT

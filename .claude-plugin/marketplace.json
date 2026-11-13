@@ -1,0 +1,12 @@
+{
+  "name": "plugin-advisor",
+  "owner": { "name": "Jimmy0219" },
+  "plugins": [
+    {
+      "name": "graphify-button",
+      "source": "./mods/graphify-button",
+      "description": "輸入框上方的 graphify 快捷按鈕：一鍵產生或更新專案關係圖",
+      "version": "0.1.1"
+    }
+  ]
+}

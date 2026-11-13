@@ -9,7 +9,7 @@
 | modern-web-guidance 0.0.194 | 插件（user scope，來自 claude-plugins-official） | 2026-11-13 | Google Chrome 官方的現代網頁最佳實踐與相容性指引；含 `modern-web-guidance`、`chrome-extensions` 兩個 skill，無 hooks／MCP，常駐約 476 token | `claude plugin uninstall modern-web-guidance@claude-plugins-official` |
 | ui-ux-pro-max 2.15.0 | 全域 skill（`~/.claude/skills/ui-ux-pro-max`，npx skills 安裝） | 2026-11-13 | UI 風格、配色、字型、UX 準則的本機搜尋資料庫；腳本只用 Python 標準函式庫、無網路呼叫，3.6MB | 刪除 `~/.claude/skills/ui-ux-pro-max` |
 | graphify 0.9.108（PyPI：`graphifyy`） | CLI（uv tool）＋全域 skill（`~/.claude/skills/graphify`） | 2026-11-13 | 把專案轉成互動關係圖（graph.html）與重點報告；程式碼本機解析不耗 token。未啟用常駐 hook；`graphify install` 在全域 `~/.claude/CLAUDE.md` 末尾加了 4 行註冊文字；SKILL.md 約 50KB，觸發時佔 context 較多 | `graphify uninstall` ＋ `uv tool uninstall graphifyy` |
-| graphify-button 0.1.0（自製 mod） | 桌面版介面改造（`~/.claude/dev-mods/…/graphify-button`） | 2026-11-13 | 輸入框上方的「產生專案圖」「只更新變動」按鈕，送出 `/graphify .`；Claude 回覆中自動隱藏；無 hooks 攔截工具 | 刪除該 mod 資料夾 |
+| graphify-button 0.1.1（自製插件） | 插件（user scope，本機市集 `plugin-advisor`，原始碼在本 repo 的 `mods/graphify-button`） | 2026-11-13 | 輸入框上方的「產生專案圖」「只更新變動」按鈕，送出 `/graphify .`；Claude 回覆中自動隱藏；無 hooks 攔截工具，常駐 0 token | `claude plugin uninstall graphify-button@plugin-advisor` |
 
 - MCP 伺服器（`~/.claude.json`、`claude_desktop_config.json`）：**無**
 - 註：`~/.local/bin/claude` 是 2.1.150，比桌面版內建的 2.1.317 舊很多（終端機版需要時可更新）
